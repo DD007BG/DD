@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: DD 3060564181@qq.com, DD, LIC=32B1Q-ND08V-VEXHA-17K1Z-JICFJ-8W56X
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.0.0
+Toolchain Path:  E:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.0.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\30605\Desktop\ÖÇ»Û¼Ò¾ÓHAL_FREETOS\Projects\MDK-ARM\atk_f103.uvprojx
+Project File Date:  04/08/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\Keil5\ARM\ARMCC\Bin'
+Build target 'FreeRTOS'
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling sys.c...
+compiling system_stm32f1xx.c...
+compiling delay.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling usart.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling demo.c...
+..\..\User\demo.c(83): warning:  #177-D: variable "key"  was declared but never referenced
+      uint8_t key;
+..\..\User\demo.c(84): warning:  #177-D: variable "is_unvarnished"  was declared but never referenced
+      uint8_t is_unvarnished = 0;
+..\..\User\demo.c: 2 warnings, 0 errors
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling main.c...
+..\..\User\main.c(117): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\User\main.c: 1 warning, 0 errors
+compiling freertos_tasks.c...
+..\..\User\freertos_tasks.c(138): warning:  #177-D: variable "Read_DHT11_Data_num"  was declared but never referenced
+      uint32_t Read_DHT11_Data_num = 0;
+..\..\User\freertos_tasks.c(159): warning:  #177-D: variable "task2_num"  was declared but never referenced
+      uint32_t task2_num = 0;
+..\..\User\freertos_tasks.c(176): warning:  #177-D: variable "key"  was declared but never referenced
+      uint8_t key = 0;
+..\..\User\freertos_tasks.c(204): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\User\freertos_tasks.c(196): warning:  #177-D: variable "task4_num"  was declared but never referenced
+      uint32_t task4_num = 0;
+..\..\User\freertos_tasks.c: 5 warnings, 0 errors
+compiling stm32f1xx_hal_usart.c...
+compiling stm32f1xx_hal_uart.c...
+compiling led.c...
+compiling btim.c...
+compiling as312.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_ll_fsmc.c...
+compiling stm32f1xx_hal_sram.c...
+compiling key.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling MqttKit.c...
+compiling lcd.c...
+compiling DHT11.c...
+compiling adc.c...
+compiling aliyun_net.c...
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(51): warning:  #47-D: incompatible redefinition of macro "__MPU_PRESENT"  (declared at line 163 of "E:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h")
+   #define __MPU_PRESENT             0U       /*!< Other STM32 devices does not provide an MPU  */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(53): warning:  #47-D: incompatible redefinition of macro "__Vendor_SysTickConfig"  (declared at line 166 of "E:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h")
+  #define __Vendor_SysTickConfig     0U       /*!< Set to 1 if different SysTick Config is used */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(72): error:  #101: "NonMaskableInt_IRQn" has already been declared in the current scope
+    NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                             */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(74): error:  #101: "MemoryManagement_IRQn" has already been declared in the current scope
+    MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M3 Memory Management Interrupt              */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(75): error:  #101: "BusFault_IRQn" has already been declared in the current scope
+    BusFault_IRQn               = -11,    /*!< 5 Cortex-M3 Bus Fault Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(76): error:  #101: "UsageFault_IRQn" has already been declared in the current scope
+    UsageFault_IRQn             = -10,    /*!< 6 Cortex-M3 Usage Fault Interrupt                    */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(77): error:  #101: "SVCall_IRQn" has already been declared in the current scope
+    SVCall_IRQn                 = -5,     /*!< 11 Cortex-M3 SV Call Interrupt                       */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(78): error:  #101: "DebugMonitor_IRQn" has already been declared in the current scope
+    DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M3 Debug Monitor Interrupt                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(79): error:  #101: "PendSV_IRQn" has already been declared in the current scope
+    PendSV_IRQn                 = -2,     /*!< 14 Cortex-M3 Pend SV Interrupt                       */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(80): error:  #101: "SysTick_IRQn" has already been declared in the current scope
+    SysTick_IRQn                = -1,     /*!< 15 Cortex-M3 System Tick Interrupt                   */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(83): error:  #101: "WWDG_IRQn" has already been declared in the current scope
+    WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                            */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(84): error:  #101: "PVD_IRQn" has already been declared in the current scope
+    PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt            */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(85): error:  #101: "TAMPER_IRQn" has already been declared in the current scope
+    TAMPER_IRQn                 = 2,      /*!< Tamper Interrupt                                     */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(86): error:  #101: "RTC_IRQn" has already been declared in the current scope
+    RTC_IRQn                    = 3,      /*!< RTC global Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(87): error:  #101: "FLASH_IRQn" has already been declared in the current scope
+    FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                               */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(88): error:  #101: "RCC_IRQn" has already been declared in the current scope
+    RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(89): error:  #101: "EXTI0_IRQn" has already been declared in the current scope
+    EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(90): error:  #101: "EXTI1_IRQn" has already been declared in the current scope
+    EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(91): error:  #101: "EXTI2_IRQn" has already been declared in the current scope
+    EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(92): error:  #101: "EXTI3_IRQn" has already been declared in the current scope
+    EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(93): error:  #101: "EXTI4_IRQn" has already been declared in the current scope
+    EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(94): error:  #101: "DMA1_Channel1_IRQn" has already been declared in the current scope
+    DMA1_Channel1_IRQn          = 11,     /*!< DMA1 Channel 1 global Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(95): error:  #101: "DMA1_Channel2_IRQn" has already been declared in the current scope
+    DMA1_Channel2_IRQn          = 12,     /*!< DMA1 Channel 2 global Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(96): error:  #101: "DMA1_Channel3_IRQn" has already been declared in the current scope
+    DMA1_Channel3_IRQn          = 13,     /*!< DMA1 Channel 3 global Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(97): error:  #101: "DMA1_Channel4_IRQn" has already been declared in the current scope
+    DMA1_Channel4_IRQn          = 14,     /*!< DMA1 Channel 4 global Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(98): error:  #101: "DMA1_Channel5_IRQn" has already been declared in the current scope
+    DMA1_Channel5_IRQn          = 15,     /*!< DMA1 Channel 5 global Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(99): error:  #101: "DMA1_Channel6_IRQn" has already been declared in the current scope
+    DMA1_Channel6_IRQn          = 16,     /*!< DMA1 Channel 6 global Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(100): error:  #101: "DMA1_Channel7_IRQn" has already been declared in the current scope
+    DMA1_Channel7_IRQn          = 17,     /*!< DMA1 Channel 7 global Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(101): error:  #101: "ADC1_2_IRQn" has already been declared in the current scope
+    ADC1_2_IRQn                 = 18,     /*!< ADC1 and ADC2 global Interrupt                       */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(102): error:  #101: "USB_HP_CAN1_TX_IRQn" has already been declared in the current scope
+    USB_HP_CAN1_TX_IRQn         = 19,     /*!< USB Device High Priority or CAN1 TX Interrupts       */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(103): error:  #101: "USB_LP_CAN1_RX0_IRQn" has already been declared in the current scope
+    USB_LP_CAN1_RX0_IRQn        = 20,     /*!< USB Device Low Priority or CAN1 RX0 Interrupts       */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(104): error:  #101: "CAN1_RX1_IRQn" has already been declared in the current scope
+    CAN1_RX1_IRQn               = 21,     /*!< CAN1 RX1 Interrupt                                   */
+..\..\Drivers\BSP\aliyun_net\aliyun_net.c: 2 warnings, 30 errors
+compiling stm32f1xx_hal_adc_ex.c...
+compiling LightSensor.c...
+compiling stm32f1xx_hal_tim.c...
+compiling pwm.c...
+compiling malloc.c...
+compiling MQ135.c...
+compiling atk_mw8266d_uart.c...
+compiling event_groups.c...
+compiling atk_mw8266d.c...
+compiling Stepper.c...
+compiling list.c...
+compiling queue.c...
+compiling croutine.c...
+compiling port.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling tasks.c...
+compiling stream_buffer.c...
+"..\..\Output\atk_f103.axf" - 30 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_FreeRTOS
+  E:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:20
+</pre>
+</body>
+</html>

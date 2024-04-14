@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "sys.h": "c",
+        "delay.h": "c",
+        "dht11.h": "c",
+        "as312.h": "c",
+        "malloc.h": "c",
+        "usart3.h": "c"
+    }
+}
